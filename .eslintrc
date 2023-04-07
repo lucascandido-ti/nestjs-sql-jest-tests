@@ -1,0 +1,23 @@
+{
+  "root":true,
+  "env": {
+    "es6": true,
+    "node":true,
+    "jest":true
+  },
+  "extends":["eslint:recommended","plugin:@typescript/recommended"],
+  "parser": "@typescript/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules":{
+    "@typescript-eslint/no-non-null-assertion":"off",
+    "@typescript-eslint/no-unused-vars":[
+      "error",
+      {"ardsIgnorePattern":"^_", "varsIgnorePattern":"^_"}
+    ],
+    "no-empty":"off"
+  }
+}
